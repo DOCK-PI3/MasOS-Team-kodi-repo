@@ -1,5 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.program.iagl" name="Internet Archive Game Launcher" version="2.0.7">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.elementtree"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video game</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <!-- <reuselanguageinvoker>false</reuselanguageinvoker> -->
+    <platform>all</platform>
+    <summary lang="en_GB">Internet Archive Game Launcher</summary>
+    <description lang="en_GB">The Internet Archive Game Launcher (IAGL) is a FREE Kodi addon that will browse and launch games available from the Internet</description>
+    <summary lang="es_ES">Internet Archive Game Launcher</summary>
+    <description lang="es_ES">Internet Archive Game Launcher (IAGL) es un complemento gratuito para Kodi que explorarÃ¡ y lanzarÃ¡ juegos disponibles en Internet</description>
+    <summary lang="es_MX">Internet Archive Game Launcher</summary>
+    <description lang="es_MX">Internet Archive Game Launcher (IAGL) es un complemento gratuito para Kodi que explorarÃ¡ y lanzarÃ¡ juegos disponibles en Internet</description>
+    <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=231339</forum>
+    <source>https://github.com/zach-morris/plugin.program.iagl</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>support/media/screen1.jpg</screenshot>
+      <screenshot>support/media/screen2.jpg</screenshot>
+      <screenshot>support/media/screen3.jpg</screenshot>
+      <screenshot>support/media/screen4.jpg</screenshot>
+      <screenshot>support/media/screen5.jpg</screenshot>
+      <screenshot>support/media/screen6.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.program.iarl" name="Internet Archive ROM Launcher" version="1.7.0" provider-name="Zach Morris">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="plugin.video.youtube" version="5.1.9"/>
+    <import addon="script.module.dateutil" version="2.4.2"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="virtual.system-tools" version="7.0.100" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video game</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>Internet Archive ROM Launcher</summary>
+    <description>IARL will download ROMs from the Internet Archive and launch them with Kodi</description>
+    <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=231339</forum>
+    <source>https://github.com/zach-morris/plugin.program.iarl</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>support/media/screen1.jpg</screenshot>
+      <screenshot>support/media/screen2.jpg</screenshot>
+      <screenshot>support/media/screen3.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.cine" name="Cine" version="1.0.58" provider-name="Topo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Cine</summary>
+    <description>Addon de Cine</description>
+    <disclaimer></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Cineteka"
+       name="[COLOR gold]Cineteka Retro[/COLOR][COLOR blue] 1[/COLOR].[COLOR yellow]0[/COLOR].[COLOR red]0[/COLOR]"
+       version="1.0.0"
+       provider-name="Cineteka">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por Cineteka</summary>
+    <description>Cineteka 2018,cine retro y nuevo</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.CanalNereo" name="[COLOR lime]Repo Canal Nereo[/COLOR] Repo" version="1.0.2" provider-name="Canal Nereo">
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Mi</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.MasOS-Team.kodi" name="MasOS Team REPO" version="0.5.0" provider-name="DOCK-PI3">
 	<extension point="xbmc.addon.repository" name="MasOS Team Repository">
 		<info compressed="false">http://raw.github.com/DOCK-PI3/MasOS-Team-kodi-repo/master/addons.xml</info>
@@ -12,5 +144,40 @@
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.movistarTV.Leia.Alpha"
+		name="Addons MovistarTV Leia Alpha"
+		version="1.0.1"
+		provider-name="vmjuidiaz">
+  <requires>
+  </requires>
+	<extension point="xbmc.addon.repository">
+		<info>https://downloads.sourceforge.net/project/movistartv/Alpha/Leia/addons.xml</info>
+		<checksum>https://downloads.sourceforge.net/project/movistartv/Alpha/Leia/addons.xml.md5</checksum>
+		<datadir>https://downloads.sourceforge.net/project/movistartv/Alpha/Leia</datadir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    <summary lang="en">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</summary>
+    <summary lang="es">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</summary>
+    <description lang="en">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</description>
+    <description lang="es">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</description>
+    <disclaimer lang="en"></disclaimer>
+    <disclaimer lang="es"></disclaimer>
+    <platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.0" provider-name="zachmorris">
+    <extension point="xbmc.addon.repository" name="Zach Morris Add-ons">
+        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Zach Morris Add-ons</summary>
+        <platform>all</platform>
+    </extension>
 </addon>
 </addons>

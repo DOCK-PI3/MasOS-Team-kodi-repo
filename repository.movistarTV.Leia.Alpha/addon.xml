@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.movistarTV.Leia.Alpha"
+		name="Addons MovistarTV Leia Alpha"
+		version="1.0.1"
+		provider-name="vmjuidiaz">
+  <requires>
+  </requires>
+	<extension point="xbmc.addon.repository">
+		<info>https://downloads.sourceforge.net/project/movistartv/Alpha/Leia/addons.xml</info>
+		<checksum>https://downloads.sourceforge.net/project/movistartv/Alpha/Leia/addons.xml.md5</checksum>
+		<datadir>https://downloads.sourceforge.net/project/movistartv/Alpha/Leia</datadir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    <summary lang="en">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</summary>
+    <summary lang="es">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</summary>
+    <description lang="en">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</description>
+    <description lang="es">Repositorio de Kodi PVR para Movistar+ TV Leia Alpha</description>
+    <disclaimer lang="en"></disclaimer>
+    <disclaimer lang="es"></disclaimer>
+    <platform>all</platform>
+	</extension>
+</addon>

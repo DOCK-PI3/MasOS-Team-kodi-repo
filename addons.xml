@@ -135,6 +135,31 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.tutosmasosteam"
+	name="MasOS Team tutoriales"
+	version="1.8"
+	provider-name="DOCK-PI3">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">MasOS Team Canal Youtube </summary>
+    <description lang="es">Canal dedicado a ofrecer tutoriales y tips sobre el mundo del arcade retro y otros videos de interes.</description>
+    <platform>all</platform>
+    <website>http://masos.dx.am/</website>
+    <email>dock.pi3@gmail.com</email>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+		</assets>
+       </extension>
+</addon>
+
 <addon id="repository.CanalNereo" name="[COLOR lime]Repo Canal Nereo[/COLOR] Repo" version="1.0.2" provider-name="Canal Nereo">
     <extension point="xbmc.addon.repository" name="Mi repositorio">
         <info>https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/addons.xml</info>

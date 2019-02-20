@@ -40,7 +40,7 @@ def main_list(params):
 
     plugintools.add_item( 
         #action="", 
-        title="tutosmasosteam",
+        title="Masos Team Tutos",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID1+"/",
         thumbnail=icon,
         folder=True )

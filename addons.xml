@@ -137,7 +137,7 @@
 
 <addon id="plugin.video.tutosmasosteam"
 	name="MasOS Team tutoriales"
-	version="1.8"
+	version="2.5"
 	provider-name="DOCK-PI3">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -155,7 +155,7 @@
     <email>dock.pi3@gmail.com</email>
     <assets>
         <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
+        <fanart>fanart.png</fanart>
 		</assets>
        </extension>
 </addon>
